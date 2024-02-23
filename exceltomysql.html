@@ -2,25 +2,32 @@
   <head>
     <meta charSet="utf-8"/>
     <title>stabur.github.io | Экспорт таблицы MS Excel в дазу данных MySQL (ExcelToMySql)</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
   </head>
-<body bgcolor="000000" text="ffffff">
-  <h1 align="center">stabur.github.io</h1>
-  <h2 align="center">Экспорт таблицы MS Excel в дазу данных MySQL (ExcelToMySql)</h2>
+<body>
+  <h1>stabur.github.io</h1>
+  <h2>Экспорт таблицы MS Excel в дазу данных MySQL (ExcelToMySql)</h2><br />
+  <h3><a href="./index.html">На главную</a></h3><br />
+
   <center><table border="0" width="80%">
     <tr>
-        <td>&nbsp;&nbsp;&nbsp;<b>"# ExcelToMySql"</b> Программа написанная на Python (необходимые решения для реализации см. в описании),
+        <td>&nbsp;&nbsp;&nbsp;<b>"# ExcelToMySql"</b> Программа написанная на Python (необходимые решения для реализации см. ниже),
             представляет из себя GUI графический интерфейс под Windows, позволяющий переносить данные таблицы MS Excel (.xlsx) 
-            в базу данных MySQL.
+            в базу данных MySQL.<br />
+            &nbsp;&nbsp;&nbsp;<b>Принцип работы.</b> После запуска программы, необходимо корректно заполнить все поля
+            для подключения к базе данных MySQL.<br />
         </td>
     </tr>
     <tr>
-        <td>&nbsp;&nbsp;&nbsp;<b>Принцип работы.</b><br />&nbsp;После запуска программы, необходимо корректно заполнить все поля
-            для подключения к базе данных MySQL.
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <img src="./img/exceltomysql1.jpg">
+        <td>
+            <div id="thumbnails">
+                <ul class="clearfix">
+                    <li><a href="./img/exceltomysql1.jpg" title="Запуск программы ExcelToMySql"><img src="./img/exceltomysql1_s.jpg"></a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -30,12 +37,17 @@
             (по умолчанию 22), логин пароль от ssh-сервера, внутренний адрес mysql-сервера (по умолчанию 127.0.0.1) и порт 
             (по умолчанию 3306). Нажимаем кнопку "Test SSH-Server". При удачном соединении в верхней части программы появиться 
             надпись "Соединение c SSH-сервером установленно!", при неудачной "Соединение c SSH-сервером НЕ установленно!",
-            необходимо проверить вышевнесенные данные.
+            необходимо проверить вышевнесенные данные.<br />
         </td>
     </tr>
     <tr>
-        <td align="center">
-            <img src="./img/exceltomysql2.jpg">&nbsp;<img src="./img/exceltomysql3.jpg">
+        <td>
+            <div id="thumbnails">
+                <ul class="clearfix">
+                    <li><a href="./img/exceltomysql2.jpg" title="ExcelToMySql - Соединение c SSH-сервером установленно!"><img src="./img/exceltomysql2_s.jpg"></a></li>
+                    <li><a href="./img/exceltomysql3.jpg" title="ExcelToMySql - Соединение c SSH-сервером НЕ установленно!"><img src="./img/exceltomysql3_s.jpg"></a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
@@ -43,39 +55,62 @@
             &nbsp;Если с ssh сервером соединение состоялось, переходим к проверки подключения к самой базе данных MySQL.
             Хост (по умолчанию localhost), логин, пароль, и название дазы данных. Также проверяем, нажимаем на кнопку 
             "Проверить соединение с БД". В результате удачного подключения появится "Соединение c MySql установленно!", 
-            иначе "Соединение c MySql НЕ установленно!".
+            иначе "Соединение c MySql НЕ установленно!".<br />
         </td>
     </tr>
     <tr>
-        <td align="center">
-            <img src="./img/exceltomysql4.jpg">&nbsp;<img src="./img/exceltomysql5.jpg">
+        <td>
+            <div id="thumbnails">
+                <ul class="clearfix">
+                    <li><a href="./img/exceltomysql4.jpg" title="ExcelToMySql - Соединение c MySql установленно!"><img src="./img/exceltomysql4_s.jpg"></a></li>
+                    <li><a href="./img/exceltomysql5.jpg" title="ExcelToMySql - Соединение c MySql НЕ установленно!"><img src="./img/exceltomysql5_s.jpg"></a></li>
+                </ul>
+            </div>            
         </td>
     </tr>
     <tr>
         <td>
             &nbsp;Все тесты подключения прошли успешно, теперь можно приклеплять excel-файл формата .xlsx нажатием кнопки 
-            "Прикрепить файл" выходит окно, где необходимо выбрать нужный файл. В результате должно получиться следующее:
+            "Прикрепить файл" выходит окно, где необходимо выбрать нужный файл. В результате должно получиться следующее:<br />
         </td>
     </tr>
     <tr>
-        <td align="center">
-            <img src="./img/exceltomysql6.jpg">
+        <td>
+            <div id="thumbnails">
+                <ul class="clearfix">
+                    <li><a href="./img/exceltomysql6.jpg" title="ExcelToMySql - Прикрепляем файл."><img src="./img/exceltomysql6_s.jpg"></a></li>
+                </ul>
+            </div>
         </td>
     </tr>
     <tr>
         <td>
             &nbsp;Теперь нажимаем кнопку "Создать" и ждем завершения. Время ожидания зависит от объема данных. Если все 
-            сделанно верно, должно получится следующие:  
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <img src="./img/exceltomysql7.jpg">&nbsp;<img src="./img/exceltomysql8.jpg">&nbsp;<img src="./img/exceltomysql9.jpg">
+            сделанно верно, должно получится следующие:  <br />
         </td>
     </tr>
     <tr>
         <td>
-            &nbsp;Пока не доработан стстус загрузки файла, есть не доработки с таблицами и колоноками в таблице, 
+            <div id="thumbnails">
+                <ul class="clearfix">
+                    <li><a href="./img/exceltomysql7.jpg" title="ExcelToMySql - Создаем таблицу в MySQL и выгружаем в неё данные."><img src="./img/exceltomysql7_s.jpg"></a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div id="thumbnails">
+                <ul class="clearfix">
+                    <li><a href="./img/exceltomysql8.jpg" title="ExcelToMySql - Результат выгрузки данных в MySQL."><img src="./img/exceltomysql8_s.jpg"></a></li>
+                    <li><a href="./img/exceltomysql9.jpg" title="ExcelToMySql - Результат выгрузки данных в MySQL."><img src="./img/exceltomysql9_s.jpg"></a></li>
+                </ul>
+            </div> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &nbsp;Пока не доработан статус/индикатор загрузки файла, есть не доработки с таблицами и колоноками в таблице, 
             например, если таблица в базе mysql уже существует и количество и наименование колонок соответствует, 
             то (тоже пока недоработан update запрос) происходит добавление к существующим записям. В процессе планирую 
             сделать гибкую систему добавления, с выбором функций, либо полностью удалить содержимое таблицы и заново 
@@ -92,19 +127,25 @@
     </tr>
     <tr>
       <td>&nbsp;Создавалось и тестировалось на Win10 64x, Python 3.10.4 (и на Python 3.12.2).<br />
-        Потребуется установить:<br />
-        MySQLdb<br />pip install mysqlclient<br />
-        PyQt5<br />pip install PyQt5<br />
-        Pandas<br />pip install pandas<br />
-        Numpy<br />pip install numpy<br />
-        SSHTunnel<br />pip install sshtunnel<br />
-        re<br />pip install re<br />
-        Openpyxl<br />pip install openpyxl<br />
-        PyArrow<br />pip install PyArrow<br />
+        <b>Потребуется установить:</b><br />
+        <b>MySQLdb</b><br />pip install mysqlclient<br />
+        <b>PyQt5</b><br />pip install PyQt5<br />
+        <b>Pandas</b><br />pip install pandas<br />
+        <b>Numpy</b><br />pip install numpy<br />
+        <b>SSHTunnel</b><br />pip install sshtunnel<br />
+        <b>re</b><br />pip install re<br />
+        <b>Openpyxl</b><br />pip install openpyxl<br />
+        <b>PyArrow</b><br />pip install PyArrow<br /><br />
         &nbsp;Сервером служил домашний компьютер с Linux Debian 12, Apache/2.4.57, mysql Ver 15.1 Distrib 10.11.4-MariaDB, 
-        OpenSSH_9.2p1 Debian-2+deb12u2, OpenSSL 3.0.11 19 Sep 2023
+        OpenSSH_9.2p1 Debian-2+deb12u2, OpenSSL 3.0.11 19 Sep 2023<br /><br />
       </td>
     </tr>
   </table></center>
+  <h3><a href="./index.html">На главную</a></h3><br />
+  <script type="text/javascript">
+    $(function() {
+        $('#thumbnails a').lightBox();
+    });
+    </script>
 </body>
 </html>

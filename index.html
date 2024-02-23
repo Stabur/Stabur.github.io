@@ -2,21 +2,53 @@
   <head>
     <meta charSet="utf-8"/>
     <title>stabur.github.io</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
   </head>
-<body bgcolor="000000" text="ffffff">
-  <h1 align="center">stabur.github.io</h1>
-  <center><table border="1" width="80%">
+<body>
+  <h1>stabur.github.io</h1>
+  <center><table width="80%" border="0">
     <tr>
       <td align="center"><b>ExcelToMySql</b></td>
     </tr>
     <tr>
-      <td>&nbsp;&nbsp;&nbsp;"# ExcelToMySql" Программа написанная на Python (необходимые решения для реализации см. в описании),
-        представляет из себя GUI графический интерфейс под Windows, позволяющий переносить данные таблицы MS Excel (.xlsx) 
-        в базу данных MySQL.</td>
-    </tr>
-    <tr>
-      <td align="right"><a href="./exceltomysql.html">Подробнее...</a>&nbsp;&nbsp;</td>
+      <td>
+        <table border="1" class="rounded">
+          <tr>
+            <td>
+              <div id="thumbnails">
+                <ul class="clearfix">
+                    <li><a href="./img/exceltomysql1.jpg" title="ExcelToMySql - переносит данные таблицы MS Excel в MySQL"><img src="./img/exceltomysql1_s.jpg"></a></li>
+                </ul>
+            </div>
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    &nbsp;&nbsp;&nbsp;"# ExcelToMySql" Программа написанная на Python (необходимые решения для реализации см. в описании),
+                    представляет из себя GUI графический интерфейс под Windows, позволяющий переносить данные таблицы MS Excel (.xlsx) 
+                    в базу данных MySQL.
+                  </td>                
+                </tr>
+                <tr>
+                  <td class="right">
+                    <a href="./exceltomysql.html"><b>Подробнее...</b></a>&nbsp;&nbsp;
+                  </td>
+                </tr>
+            </table>
+            </td>
+          </tr>
+        </table>
+      </td>
     </tr>
   </table></center>
+  <script type="text/javascript">
+    $(function() {
+        $('#thumbnails a').lightBox();
+    });
+    </script>
 </body>
 </html>
