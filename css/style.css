@@ -6,6 +6,9 @@
     transition: .5s ease-in-out;
     /* добавим плавность переходов для всех элементов страницы*/
  }
+ p {
+	text-indent: 20px;
+}
  ul {
     list-style: none;
  }
@@ -154,6 +157,7 @@ header {
     line-height: 1.5;
     padding-bottom: 1em;
     background: white;
+    border-radius: 15px;
  }
  .post-image {
     margin-bottom: 30px;
@@ -162,15 +166,15 @@ header {
  .category {
     margin-bottom: 15px;
     text-align: center;
-    font-size: 15px;
-    
+    font-size: 15px;    
  }
  .category a {
-    color: #F8B763;
+    color: green;
     font-weight: 900;
-    -webkit-text-stroke: 0.5px green; /* Толщина и цвет обводки */
-    text-stroke: 0.5px green; /* Толщина и цвет обводки (стандартное свойство) */
+
     text-transform: uppercase;
+    top: 10px;
+    bottom: 10px;
  }
  .post-title {
     margin-bottom: 12px;
