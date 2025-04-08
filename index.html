@@ -1,60 +1,60 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="content-language" content="ru">
-    <meta name="robots" content="noindex, nofollow">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="expires" content="0">
-    <meta name="author" content="StaBur | https://t.me/StaBur">
-    <meta name="reply-to" content="burnov80@gmail.com">
-    <meta name="copyright" content="StaBur">
-
-    <title>stabur.github.io</title>
-    <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">
-    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaBur.GitHub.io</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
 <body>
-  <a href="./index.html"><img src="./img/stabur.github.png" alt="Stabur.GitHub.io" title="Stabur.GitHub.io"></a>
-  <div class="headinfo"><a target="_blank" href="https://t.me/StaBur"><b>telegramm</b></a></div>
 
-  <h1 id="AuthenPHP"><a target="_new" href="https://github.com/Stabur/EIS">Employee Interaction System PHP</a></h1>
-  <div class="container">
-    <div id="thumbnails">
-      <ul class="clearfix item-container">
-          <li><a href="./img/eis.jpg" title="EIS PHP"><img src="./img/eis.jpg" alt="EIS PHP" width="275"></a></li>
+<header>
+    <nav class="container">
+      <a title="StaBur.GitHub.io" class="logo" href=""><span>StaBur.GitHub.io</span></a>
+      <div class="nav-toggle"><span></span></div>
+
+      <ul id="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Repositories</a></li>
+        <li><a href="">Diverse</a></li>
       </ul>
-    </div>
-    <div>&nbsp;&nbsp;"# PHP Employee Interaction System" - Система Взаимодействия Сотрудников для малого и среднего предприятия написана на PHP<br>
-          &nbsp;&nbsp;Находится в стадии разработки.<br>
-          <a class="right" target="_new" href="https://github.com/Stabur/EIS"><b>Подробнее...</b></a></div>
-  </div>
+    </nav>
+  </header>
 
-  <h1 id="ExcelToMySql"><a href="./exceltomysql.html">ExcelToMySql</a></h1>
   <div class="container">
-    <div id="thumbnails">
-      <ul class="clearfix item-container">
-          <li><a href="./img/exceltomysql1.jpg" title="ExcelToMySql - переносит данные таблицы MS Excel в MySQL"><img src="./img/exceltomysql1_s.jpg" alt="ExcelToMySql" width="200"></a></li>
-      </ul>
-    </div>
-    <div>&nbsp;&nbsp;"# ExcelToMySql" - утилита написанная на Python (необходимые решения для реализации см. в описании),
-          представляет из себя GUI графический интерфейс под Windows.<br>
-          &nbsp;&nbsp;Удобно, если вам необходимо перенести данные таблицы MS Excel (.xlsx), прайс-лист или перечень 
-          чего-либо с описанием, большого объема в базу данных MySQL.<br>
-          <a class="right" href="./exceltomysql.html"><b>Подробнее...</b></a></div>
+  <div class="posts-list">
+    <article class="post">
+    <h2 class="post-title" align="center">Я не волшебник, я только учусь...</h2>
+
+      <div id="post-1" class="post-content">
+        <div class="category"><a href="https://github.com/Stabur/ExcelToMySql">Утилита для конверции excle таблицы в базу данных mysql</a></div>
+        <h2 class="post-title">Excel в mysql.</h2>
+        <p>ExcelToMySql - утилита написанная на Python (необходимые решения для реализации см. в описании), представляет из себя GUI графический интерфейс под Windows.
+          Удобно, если вам необходимо перенести данные таблицы MS Excel (.xlsx), прайс-лист или перечень чего-либо с описанием, большого объема в базу данных MySQL.</p>
+        <div class="post-footer">
+          <a class="more-link" href="https://github.com/Stabur/ExcelToMySql">Перейти на GitHub</a>
+        </div>
+      </div>
+      
+    </article>
+  </div> <!-- конец div class="posts-list"-->
+
+
+</div> <!-- конец div class="container"-->
+
+<footer>
+  <div class="container">
+    <div class="footer-col"><a target="_new" href="https://t.me/stabur"><span>StaBur © 2025</span>&nbsp;&nbsp;Development</a></div>
   </div>
-<br>
-
-  <div class="footinfo"><a target="_blank" href="https://t.me/StaBur"><b>telegramm</b></a></div>
-
-  <script type="text/javascript">
-    $(function() {
-        $('#thumbnails a').lightBox();
-    });
-    </script>
+</footer>
+<script>
+$('.nav-toggle').on('click', function(){
+$('#menu').toggleClass('active');
+});
+</script>
 </body>
 </html>
